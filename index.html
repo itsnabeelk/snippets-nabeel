@@ -12,40 +12,51 @@
 <body>
 
     <div class="country-selector">
-        <div class="dropdown-center">
-            <button class="btn-drop-lng" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <div class="country-flag">
-                    <img id="selected-flag" src="assets/img/flags/saudi.png" alt="flag">
-                    <span id="selected-country-code">+966</span>
-                    <img src="assets/img/icons/down-arrow.png" class="arrow-down-fix" alt="down-arrow">
-                </div>
-            </button>
-            <ul class="dropdown-menu">
-                <li>
-                    <a class="dropdown-item country-code" href="#" onclick="updateSelectedCountry('assets/img/flags/saudi.png', 'Saudi Arabia +966')">
-                        <img src="assets/img/flags/saudi.png" alt="">
-                        Saudi Arabia <span>+966</span>
-                    </a>
-                </li>
-                <li>
-                    <a class="dropdown-item country-code" href="#" onclick="updateSelectedCountry('assets/img/flags/bahrain.png', 'Bahrain +973')">
-                        <img src="assets/img/flags/bahrain.png" alt="">
-                        Bahrain<span>+973</span>
-                    </a>
-                </li>
-                <li>
-                    <a class="dropdown-item country-code" href="#" onclick="updateSelectedCountry('assets/img/flags/qatar.png', 'Qatar +974')">
-                        <img src="assets/img/flags/qatar.png" alt="">
-                        Qatar <span>+974</span>
-                    </a>
-                </li>
-                <li>
-                    <a class="dropdown-item country-code" href="#" onclick="updateSelectedCountry('assets/img/flags/uae.png', 'UAE +971')">
-                        <img src="assets/img/flags/uae.png" alt="">
-                        UAE<span>+971</span>
-                    </a>
-                </li>
-            </ul>
+        <div class="container">
+            <div class="input-group mb-3">
+                <span class="input-group-text">
+                    <div class="dropdown-center">
+                        <button class="btn-drop-lng" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <div class="country-flag">
+                                <img id="selected-flag" src="assets/img/flags/saudi.png" alt="flag">
+                                <span id="selected-country-code">+966</span>
+                                <img src="assets/img/icons/down-arrow.png" class="arrow-down-fix" alt="down-arrow">
+                            </div>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item country-code" href="#"
+                                    onclick="updateSelectedCountry('assets/img/flags/saudi.png', 'Saudi Arabia +966')">
+                                    <img src="assets/img/flags/saudi.png" alt="">
+                                    Saudi Arabia <span>+966</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item country-code" href="#"
+                                    onclick="updateSelectedCountry('assets/img/flags/bahrain.png', 'Bahrain +973')">
+                                    <img src="assets/img/flags/bahrain.png" alt="">
+                                    Bahrain<span>+973</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item country-code" href="#"
+                                    onclick="updateSelectedCountry('assets/img/flags/qatar.png', 'Qatar +974')">
+                                    <img src="assets/img/flags/qatar.png" alt="">
+                                    Qatar <span>+974</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item country-code" href="#"
+                                    onclick="updateSelectedCountry('assets/img/flags/uae.png', 'UAE +971')">
+                                    <img src="assets/img/flags/uae.png" alt="">
+                                    UAE<span>+971</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </span>
+                <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+            </div>
         </div>
     </div>
     

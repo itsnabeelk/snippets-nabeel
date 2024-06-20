@@ -8,10 +8,10 @@ body{
     position: relative;
     width: 100%;
 }
-.btn-drop-lng{
+.btn-drop-lng {
     position: relative;
     border: none;
-    background: #fff;
+    background: #f8f9fa;
 }
 .country-flag {
     position: relative;
@@ -47,4 +47,11 @@ body{
 .dropdown-item.active, .dropdown-item:active {
     color: #000 !important;
     background-color: rgba(0, 0, 0, 0.075) !important;
+}
+.input-group-text {
+    padding: 0 !important;
+}
+.dropdown-menu.show {
+    transform: inherit !important;
+    top: 55px !important;
 }
