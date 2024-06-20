@@ -1,0 +1,50 @@
+body{
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.country-selector{
+    position: relative;
+    width: 100%;
+}
+.btn-drop-lng{
+    position: relative;
+    border: none;
+    background: #fff;
+}
+.country-flag {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    padding: 12px;
+    font-size: 12px;
+}
+.country-flag img{
+    width: 25px;
+}
+.arrow-down-fix {
+    width: 15px !important;
+    margin-left: 5px;
+}
+
+.country-code {
+    position: relative;
+    display: flex !important;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+}
+
+.country-code img {
+    width: 25px;
+    height: 25px;
+}
+.dropdown-item.active, .dropdown-item:active {
+    color: #000 !important;
+    background-color: rgba(0, 0, 0, 0.075) !important;
+}

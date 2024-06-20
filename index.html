@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Language</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="country-selector">
+        <div class="dropdown-center">
+            <button class="btn-drop-lng" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="country-flag">
+                    <img id="selected-flag" src="assets/img/flags/saudi.png" alt="flag">
+                    <span id="selected-country-code">+966</span>
+                    <img src="assets/img/icons/down-arrow.png" class="arrow-down-fix" alt="down-arrow">
+                </div>
+            </button>
+            <ul class="dropdown-menu">
+                <li>
+                    <a class="dropdown-item country-code" href="#" onclick="updateSelectedCountry('assets/img/flags/saudi.png', 'Saudi Arabia +966')">
+                        <img src="assets/img/flags/saudi.png" alt="">
+                        Saudi Arabia <span>+966</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="dropdown-item country-code" href="#" onclick="updateSelectedCountry('assets/img/flags/bahrain.png', 'Bahrain +973')">
+                        <img src="assets/img/flags/bahrain.png" alt="">
+                        Bahrain<span>+973</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="dropdown-item country-code" href="#" onclick="updateSelectedCountry('assets/img/flags/qatar.png', 'Qatar +974')">
+                        <img src="assets/img/flags/qatar.png" alt="">
+                        Qatar <span>+974</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="dropdown-item country-code" href="#" onclick="updateSelectedCountry('assets/img/flags/uae.png', 'UAE +971')">
+                        <img src="assets/img/flags/uae.png" alt="">
+                        UAE<span>+971</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <script>
+        function updateSelectedCountry(flagSrc, countryCode) {
+            // Update the image source with the selected country's flag
+            document.getElementById('selected-flag').src = flagSrc;
+    
+            // Extract the country code from the countryCode string
+            var countryCodeText = countryCode.substring(countryCode.lastIndexOf(' ') + 1);
+    
+            // Update the text with the selected country's code
+            document.getElementById('selected-country-code').textContent = countryCodeText;
+        }
+    </script>
+
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
