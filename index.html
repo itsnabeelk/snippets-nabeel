@@ -70,7 +70,23 @@
     
             // Update the text with the selected country's code
             document.getElementById('selected-country-code').textContent = countryCodeText;
+    
+            // Store the selected flag source and country code in localStorage
+            localStorage.setItem('selectedFlagSrc', flagSrc);
+            localStorage.setItem('selectedCountryCode', countryCodeText);
         }
+    
+        window.onload = function() {
+            // Retrieve the selected flag source and country code from localStorage
+            var selectedFlagSrc = localStorage.getItem('selectedFlagSrc');
+            var selectedCountryCode = localStorage.getItem('selectedCountryCode');
+    
+            // If the values are present, update the elements on the page
+            if (selectedFlagSrc && selectedCountryCode) {
+                document.getElementById('selected-flag').src = selectedFlagSrc;
+                document.getElementById('selected-country-code').textContent = selectedCountryCode;
+            }
+        };
     </script>
 
     <script src="assets/js/jquery-3.6.0.min.js"></script>
